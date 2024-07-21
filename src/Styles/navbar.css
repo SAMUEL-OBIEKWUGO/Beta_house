@@ -1,0 +1,41 @@
+.navbar {
+  padding: 15px 0;
+}
+
+.logo-img {
+  width: 9rem;
+  height: 9rem;
+  margin-right: 10px;
+}
+
+.profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#profile{
+  position: relative;
+  left: 18rem;
+}
+
+#profile-name{
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .logo-img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .profile-img {
+    width: 25px;
+    height: 25px;
+  }
+}

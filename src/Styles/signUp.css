@@ -1,0 +1,10 @@
+form{
+  max-width: 500px;
+}
+
+.logo img{
+  position: relative;
+  bottom: 36rem;
+  left: 2rem;
+  max-height: '50px';
+}
