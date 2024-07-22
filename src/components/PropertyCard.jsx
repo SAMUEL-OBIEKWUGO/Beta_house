@@ -1,27 +1,36 @@
-// import React from 'react';
 import PropTypes from 'prop-types';
 import "../Styles/PropertyCard.css";
-import bed from "../assets/bedIcon.svg";
-import toilet from "../assets/toiletIcon.svg";
+import bedIcon from "../assets/bedIcon.svg";
+import toiletIcon from "../assets/toiletIcon.svg";
+import linkIcon from "../assets/arrowLink.svg";
+import shareIcon from "../assets/shareIcon.svg";
+import heartIcon from "../assets/heartIcon.svg";
 
 const PropertyCard = ({ properties }) => {
   return (
-    <div className="col-md-4 mb-4">
+    <div className="property-card col-md-4 mb-4">
       <div className="card">
         <img src={properties.image} className="card-img-top" alt={properties.title} />
         <div className="card-body">
           <h5 className="card-title">{properties.title}</h5>
-          <p className="card-text">{properties.location}</p>
-          <p className="card-text">{properties.price}</p>
-          <p className="card-text">{properties.description}</p>
-          <div className='d-flex justify-content-between'>
+          <p className="card-location">{properties.location}</p>
+          <p className="card-description">{properties.description}</p>
+          <div className='card-info d-flex justify-content-between'>
             <div className='d-flex align-items-center'>
-              <img src={bed} alt="" className="icon" />
-              <p className="card-text mb-0 ml-2">{properties.bedrooms} bedrooms</p>
+              <img src={bedIcon} alt="Bed Icon" className="icon" />
+              <p className="mb-0 ml-2">{properties.bedrooms} bedrooms</p>
             </div>
             <div className='d-flex align-items-center'>
-              <img src={toilet} alt="" className="icon" />
-              <p className="card-text mb-0 ml-2">{properties.toilets} toilets</p>
+              <img src={toiletIcon} alt="Toilet Icon" className="icon" />
+              <p className="mb-0 ml-2">{properties.toilets} toilets</p>
+            </div>
+          </div>
+          <div className='card-footer d-flex justify-content-between'>
+            <p className="card-price">{properties.price}</p>
+            <div className='card-actions d-flex'>
+              <img src={linkIcon} alt="Link Icon" className="icon-action"  width={20}/>
+              <img src={shareIcon} alt="Share Icon" className="icon-action" width={20}/>
+              <img src={heartIcon} alt="Heart Icon" className="icon-action" width={20}/>
             </div>
           </div>
         </div>
