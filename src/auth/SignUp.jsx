@@ -10,9 +10,9 @@ function SignUp() {
     <div className="container-fluid">
       <div className="row vh-100">
         <div className="col-lg-6 d-flex align-items-center justify-content-center">
-          <form className="p-4 border rounded shadow w-100" >
+          <form className="p-4 border rounded shadow w-100">
             <h3 className="mb-3">Join our community of home seekers and explore the possibilities that await.</h3>
-            <p>Lets get started by filling out the information below</p>
+            <p>Let's get started by filling out the information below</p>
             <div className="d-flex justify-content-between">
               <div className="form-group mb-3 w-50 pe-2">
                 <label>First Name</label>
@@ -53,12 +53,15 @@ function SignUp() {
             <div className="text-center">
               <Link to="/signIn">Already have an account? Sign in</Link>
             </div>
+            <div className="text-center mt-3">
+              <Link to="/home" className="btn btn-link">Continue without signing up</Link>
+            </div>
           </form>
         </div>
         <div className="col-lg-6 d-none d-lg-block p-0 position-relative">
           <img src={side_img} alt="Sign Up" className="img-fluid vh-100" style={{ objectFit: 'cover' }} />
           <div className="position-absolute top-0 start-0 p-3">
-            <img src={logo} alt="BetaHouse Logo" className="img-fluid" style={{  }} />
+            <img src={logo} alt="BetaHouse Logo" className="img-fluid" />
           </div>
         </div>
       </div>

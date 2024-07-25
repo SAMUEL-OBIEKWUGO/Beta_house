@@ -33,7 +33,7 @@ const SingIn = () => {
                 <Link id='forgot'>Forgot password</Link>
               </div>
             </div>
-            <button type="submit" className="btn btn-success btn-block mb-3 w-100">Sign Up</button>
+            <button type="" className="btn btn-success btn-block mb-3 w-100">Sign Up</button>
             <div className="text-center mb-3">
               <img src={or} alt="or" className="img-fluid" />
             </div>
